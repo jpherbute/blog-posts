@@ -1,0 +1,10 @@
+<li [ngClass]="{'list-group-item': true, 
+                'list-group-item-success': postLikes > 0,
+                'list-group-item-danger': postLikes < 0}">
+  <h3>{{ postTitle }}</h3>
+  <p>{{ postContent }}</p>
+  <p><em>{{ postCreated }}</em></p>
+  <button class="btn btn-success"
+              (click)="onUpvote()">Love it</button>&nbsp;<button class="btn btn-danger"
+              (click)="onDownvote()">Don't love it</button>
+</li>
