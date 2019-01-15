@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { resolve } from 'dns';
-import { reject } from 'q';
 
 @Component({
   selector: 'app-root',
